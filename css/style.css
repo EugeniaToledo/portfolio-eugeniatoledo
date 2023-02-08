@@ -369,7 +369,7 @@ footer {
     }
 
     .skills__card figcaption {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
     }
     
     .quote {
@@ -655,6 +655,10 @@ footer {
         opacity: 1;
         transition-duration: 0.2s ;
         border-color: var(--violet);
+    }
+
+    .skills__card figcaption {
+        font-size: 1.1rem;
     }
 
     .skills__card:hover figcaption {
