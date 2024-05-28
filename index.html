@@ -4,163 +4,265 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="./img/corazon.png" type="image/x-icon">
-    
+    <meta name="description" content="Portfolio de María Eugenia Toledo; recopilación de mis trabajos y presentaciones que he realizado.">
+    <meta name="keywords" content="web developer, responsive design, website, html, css, github, photoshop, illustrator, frontend, full stack, programación">
+    <link rel="shortcut icon" href="./img/corazon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="crossorigin="anonymous"referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" type="text/css">     
     <title>Portfolio Eugenia</title>
 </head>
 <body>
+    <!--barra de navegación-->
     <header>
-        <nav class="nav-header">
-            <ul class="nav-ul">
-                <li><a href="#about">HOLA</a></li>
-                <li><a href="#skills">CONOCIMIENTOS</a></li>
-                <li><a href="#projects">PROYECTOS</a></li>
-                <li class="nav-link"><a class= "nav-link-contact"href="#contact">CONTACTOS</a></li>
+        <nav class="nav__header">
+            <ul class="nav__ul">
+                <li><a class="nav__link" href="#about">HOLA</a></li>
+                <li><a class="nav__link" href="#skills">CONOCIMIENTOS</a></li>
+                <li><a class="nav__link" href="#projects">PROYECTOS</a></li>
+                <li><a class= "nav__link-contact" href="#contact">CONTACTOS</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!--Portada de bienvenida-->
         <section class="presentation" id="about">
-            <article class="welcome-hola">
-                <span class="welcome-greet">Hola Soy</span>
-                <h1 class="welcome-name">María Eugenia Toledo</h1>
-                <p>Estudiante, Programadora, amante de la música</p>
-                <a class="welcome-button" href="#projects">Lo que hago</a>
-            </article>
-            <section class="welcome-img">
-                <img src="./img/foto-perfil.jpg" alt="luna" width="600" height="600">
+            <section class="welcome">
+                <article class="welcome__hola">
+                    <p id="welcome__greet">¡Hola! Soy</p>
+                    <h1 class="welcome__name">Eugenia Toledo</h1>
+                    <p class="welcome__description">Estudiante, programadora y amante de la música</p>
+                    <a class="welcome__button" href="#projects">Lo que hago</a>
+                </article>
+                <section class="welcome__img">
+                    <img src="./img/undraw_in_progress_re_m1l6.svg" alt="portada">
+                </section>
             </section>
         </section>
 
+        <!--Habilidades-->
         <section class="skills" id="skills">
-            <article class="skills-title">
-            <h2>Mis Conocimientos</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, similique doloribus! Nihil asperiores cupiditate quibusdam sint accusamus doloremque incidunt distinctio repellendus.</p>
+            <article class="skills__tittle">
+            <h2>Mis conocimientos</h2>
+            <p>Estas son algunas de mis habilidades tecnológicas durante mi carrera de programación.</p>
             </article>
-            <section class="skills-figures">
-                <figure class="skills-card">
+            <section class="skills__figures">
+                <figure class="skills__card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="100" width="100"  alt="html" />
                     <figcaption><span>HTML5</span></figcaption>
                 </figure>
-                <figure class="skills-card">
+                <figure class="skills__card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="100" width="100" alt="css"/>
                     <figcaption><span>CSS3</span></figcaption>
                 </figure>
-                <figure class="skills-card">
+                <figure class="skills__card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="100" width="100" alt="java"/>
                     <figcaption><span>JAVA</span></figcaption>
                 </figure>
-                <figure class="skills-card">
+                <figure class="skills__card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="100" width="100" alt="php"/>
                     <figcaption><span>PHP</span></figcaption>
                 </figure>
-                <figure class="skills-card">
+                <figure class="skills__card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" height="100" width="100" alt="ps"/>
                     <figcaption><span>PHOTOSHOP</span></figcaption>
                </figure>
-               <figure class="skills-card">
+               <figure class="skills__card">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg" height="100" width="100"  alt="ai"/>
                     <figcaption><span>ILLUSTRATOR</span></figcaption>
                 </figure>
             </section>
         </section>
+        <!--Cita-->
         <section class="quote">
             <i class="fa-solid fa-quote-right"></i>
-            <blockquote cite="#"><h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum quam quod dolore commodi harum consequuntur maiores laborum perferendis ex non voluptas.</h3></blockquote>
-            <p>Alguien</p>
+            <blockquote cite="#"><h3>No hay nada más fuerte que una pequeña esperanza que no se rinde.</h3></blockquote>
+            <p>Matt Haig</p>
         </section>
-        <section id="project">
-            <section class="project-tittle">
-                <h2>Mis Proyectos</h2>
-                <p>Estos sosn los proyectos que voy a desarrollar a lo largo del curso.</p>
+        <!--PROYECTOS-->
+        <section id="projects" class="project">
+            <section class="project__tittle">
+                <h2>Mis proyectos</h2>
+                <p>Estos son los proyectos que fui realizando a lo largo de mi formación.</p>
             </section>
-            <section class="project-container">
-                <article class="project-card">
+            <section class="project__card">
+                <!--Portfolio de ADA-->
+                <article class="project__card-info">
                     <a href="#" target="_blank">
                         <figure>
-                            <img src="../clase-25-11-22/img/undraw_playlist_re_1oed.svg" alt="Proyecto 1">
+                            <img src="./img/project-1.jpg" alt="Project 1">
                             <figcaption>
-                                <p>Proyecto</p>
+                                <p>Portfolio</p>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
-                    <a href="#" target="_blank">
+                <!--Primer trabajo realizado en ADAItw-->
+                <article class="project__card-info">
+                    <a href="https://eugeniatoledo.github.io/mercado-liebre.github.io/" target="_blank">
                         <figure>
-                            <img src="../clase-25-11-22/img/undraw_cooking_re_a12t.svg" alt="Proyecto 1">
+                            <img src="./img/project-2.jpg" alt="Project 2">
                             <figcaption>
-                                <p>Proyecto</p>
+                                <p>Mercado Liebre</p>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
-                    <a href="#" target="_blank">
+                <!--Este proyecto es un final de la universidad-->
+                <article class="project__card-info">
+                    <a href="https://eugeniatoledo.github.io/exhale-project/index.html" target="_blank">
                         <figure>
-                            <img src="../clase-25-11-22/img/undraw_share_opinion_re_4qk7.svg" alt="Proyecto 1">
+                            <img src="./img/project-3.jpg" alt="project 3">
                             <figcaption>
-                                <p>Proyecto</p>
+                                <p>Exhale Shop</p>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
-                    <a href="#" target="_blank">
+                <article class="project__card-info">
+                    <a href="https://80-20amazonagency.com/index.html" target="_blank">
                         <figure>
-                            <img src="../clase-25-11-22/img/undraw_partying_re_at7f.svg" alt="Proyecto 1">
+                            <img src="./img/project-4.png" alt="project 4">
                             <figcaption>
-                                <p>Proyecto</p>
+                                <p>Match 3</p>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
-                    <a href="#" target="_blank">
+                <article class="project__card-info">
+                    <a href="./views/asap.html" target="_blank">
                         <figure>
-                            <img src="../clase-25-11-22/img/undraw_beach_day_cser.svg" alt="Proyecto 1">
+                            <img src="./img/undraw_playlist_re_1oed.svg" alt="Playlists">
                             <figcaption>
-                                <p>Proyecto</p>
+                                <p>Playlists</p>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
-                <article class="project-card">
-                    <a href="#" target="_blank">
+                <article class="project__card-info">
+                    <a href="./views/asap.html" target="_blank">
                         <figure>
-                            <img src="../clase-25-11-22/img/undraw_programming_re_kg9v.svg" alt="Proyecto 1">
+                            <img src="./img/undraw_programming_re_kg9v.svg" alt="Apps">
                             <figcaption>
-                                <p>Proyecto</p>
+                                <p>Todo app</p>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </article>
+                <article class="project__card-info">
+                    <a href="./views/asap.html" target="_blank">
+                        <figure>
+                            <img src="./img/undraw_share_opinion_re_4qk7.svg" alt="Artículos">
+                            <figcaption>
+                                <p>Artículos</p>
                             </figcaption>
                         </figure>
                     </a>
                 </article>
             </section>
         </section>
-        <section id="contact"></section>
+        <!--Sección de contacto-->
+        <section id="contact">
+            <section class="contact__container">
+                <article class="contact__container_box">
+                    <h3>Contactame</h3>
+                    <p>Si estás interesad@ en mis trabajos y queres recibir más información, no dudes en completar este formulario con tus datos. A la brevedad me estaré comunicando 😀</p>
+                    <article class="contact__container_boxcard">
+                        <a href="https://github.com/EugeniaToledo">
+                            <figure>
+                                <i class="fa-brands fa-github-alt" aria-hidden="true"></i>
+                                <figcaption>EugeniaToledo</figcaption>
+                            </figure>
+                        </a>
+                        <a href="https://www.instagram.com/euugetoledo">
+                            <figure>
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                <figcaption>@euugetoledo</figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="contact__container_boxcard">
+                        <a href="https://ar.linkedin.com/in/m-eugenia-toledo/en?trk=people-guest_people_search-card">
+                        <figure>
+                            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            <figcaption>María Eugenia Toledo</figcaption>
+                        </figure>
+                        </a>
+                       <a href="mailto:m.eugenia.toledo@hotmail.com">
+                        <figure>
+                            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                            <figcaption>m.eugenia.toledo@hotmail.com</figcaption>
+                        </figure>
+                       </a>
+                    </article>
+                </article>
+                <article class="contact__container_box">
+                    <h3>Escríbeme</h3>
+                    <form action="https://formsubmit.co/m.eugenia.toledo@hotmail.com" method="POST">
+                        <fieldset class="form__details">
+                            <article>
+                                <label for="text">Nombre *</label>
+                                <input type="text" name="name" class="name" id="name" placeholder="Eugenia" required>
+                            </article>
+                            <article>
+                                <label for="text">Apellido *</label>
+                                <input type="text" name="surname" class="surname" id="surname" placeholder="Toledo" required>
+                            </article>
+                        </fieldset>
+                        <fieldset>
+                            <label for="text">Email *</label>
+                            <input type="email" name="email" id="email" placeholder="m.eugenia.toledo@hotmail.com" required>
+                            <label for="text">Mensaje *</label>
+                            <textarea name="message" id="message" placeholder="Deje su consulta aquí" cols="30" rows="7" required></textarea>
+                            <a href="./index.html">
+                                <button type="submit" class="btn__submit">Enviar</button>
+                            </a>
+                        </fieldset>
+                    </form>
+                </article>
+            </section>
+            
+        </section>
 
     </main>
-
+    <!--Pie de página-->
     <footer>
-        
-       <ul>
-              <li><a href="#about">HOLA</a></li>
-                <li><a href="#skills">CONOCIMIENTOS</a></li>
-                <li><a href="#projects">PROYECTOS</a></li>
-                <li><a href="#contact">CONTACTOS</a></li>
+        <section class="footer__navbar">
+            <ul class="footer__navbarul">
+                <li class="footer__navbarli">
+                    <a class="footer__navbarli-section" href="#about">HOLA</a>
+                </li>
+                <li class="footer__navbarli">
+                    <a class="footer__navbarli-section"href="#skills">CONOCIMIENTOS</a>
+                </li>
+                <li class="footer__navbarli">
+                    <a class="footer__navbarli-section" href="#projects">PROYECTOS</a>
+                </li>
+                <li class="footer__navbarli">
+                    <a class="footer__navbarli-section" href="#contact">CONTACTOS</a>
+                </li>
             </ul>
-       
-        <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Linkedin</a></li>
-            <li><a href="mailto: m.eugenia.toledo@hotmail.com"></a>mail</li>
-        </ul>
-        <p>Hecho con ❤ por Eugenia Toledo</p>
+        </section>
+        <section class="footer__socialnetworks">
+            <ul class="footer__links">
+                <li>
+                    <a href="https://www.instagram.com/euugetoledo"><i class="footer__links-icons fa-brands fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/EugeniaToledo"><i class="footer__links-icons fa-brands fa-github-alt" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/m-eugenia-toledo"><i class="footer__links-icons fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="mailto: m.eugenia.toledo@hotmail.com"><i class="footer__links-icons fa-solid fa-envelope" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+            <p>Hecho con <i class="fa-solid fa-heart" aria-hidden="true"></i> por Eugenia Toledo</p>
+        </section>
     </footer>
 </body>
 </html>
